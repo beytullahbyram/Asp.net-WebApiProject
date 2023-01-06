@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d950b340faf446b49ba14503637ce509" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="Model.CATEGORIES" Width="2.125" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.C__MigrationHistory" Width="1.5" PointX="3.75" PointY="2.375" />
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="3.75" PointY="7.875" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaims" Width="1.5" PointX="8.25" PointY="13.875" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogins" Width="1.5" PointX="8.25" PointY="8.25" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="6" PointY="6.5" />
+        <EntityTypeShape EntityType="Model.ORDER" Width="1.5" PointX="8.25" PointY="4.5" />
+        <EntityTypeShape EntityType="Model.ORDER_CART" Width="1.5" PointX="11.25" PointY="8.5" />
+        <EntityTypeShape EntityType="Model.ORDER_DETAILS" Width="1.5" PointX="10.5" PointY="4.875" />
+        <EntityTypeShape EntityType="Model.PRODUCT" Width="1.5" PointX="8.25" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.375" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="Model.FK_ORDER_AspNetUsers" />
+        <AssociationConnector Association="Model.FK_ORDER_CART_AspNetUsers" />
+        <AssociationConnector Association="Model.FK_PRODUCT_CATEGORIES" />
+        <AssociationConnector Association="Model.FK_ORDER_DETAILS_ORDER" />
+        <AssociationConnector Association="Model.FK_ORDER_CART_PRODUCT" />
+        <AssociationConnector Association="Model.FK_ORDER_DETAILS_PRODUCT" />
+        <AssociationConnector Association="Model.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
