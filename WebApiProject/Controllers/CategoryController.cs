@@ -44,5 +44,22 @@ namespace WebApiProject.Controllers
             return Ok();
         }
 
+
+        public IHttpActionResult Put([FromBody]CATEGORIES categoriess)
+        {
+            //entry gelen bilginleri değişmiş olarak alır 
+            db.Entry(categoriess).State=System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            return Ok();
+        }
+
+        public IHttpActionResult Delete(int id)
+        {
+            CATEGORIES categories=db.CATEGORIES.Find(id);
+            db.CATEGORIES.Remove(categories);
+            db.SaveChanges();
+            return Ok();
+        }
+
     }
 }
